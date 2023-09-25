@@ -18,6 +18,7 @@
     homeConfigurations.a125x =
       home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${arch};
+        #modules = [ .home-manager/home.nix ];
         modules = [ ./home.nix ];
       };
     };
